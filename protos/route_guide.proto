@@ -1,0 +1,6 @@
+syntax = "proto3";
+import "route_models.proto";
+package route.api;
+service RouteGuide {
+ rpc GetFeature(route.models.Point) returns (route.models.Feature) {}
+}
